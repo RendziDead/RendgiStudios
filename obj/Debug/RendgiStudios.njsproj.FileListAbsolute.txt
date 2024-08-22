@@ -1,0 +1,3 @@
+C:\Users\rendz\Desktop\veb\node\RendgiStudios\RendgiStudios\obj\Debug\RendgiStudios.njsproj.AssemblyReference.cache
+C:\Users\rendz\Desktop\veb\node\RendgiStudios\RendgiStudios\obj\Debug\RendgiStudios.njsproj.CoreCompileInputs.cache
+C:\Users\rendz\Desktop\veb\node\RendgiStudios\RendgiStudios\bin\Microsoft.NodejsTools.WebRole.dll
