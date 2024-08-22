@@ -1,0 +1,316 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+    background-image: url('cube5.gif');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+}
+
+header {
+    background-color: #222;
+    color: #fff;
+    padding: 15px 0;
+}
+
+    header nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+        header nav .logo {
+            font-size: 28px;
+            font-weight: 700;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+            header nav ul li {
+                margin-left: 20px;
+            }
+
+                header nav ul li a {
+                    color: #fff;
+                    text-decoration: none;
+                    font-size: 18px;
+                    padding: 5px 10px;
+                    transition: background-color 0.3s ease;
+                }
+
+                    header nav ul li a:hover {
+                        background-color: #444;
+                        border-radius: 5px;
+                    }
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+
+
+#hero {
+    height: 500px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+    #hero .hero-content {
+        background: linear-gradient(45deg, rgba(0, 0, 0, 0.3), rgba(84, 84, 84, 0.3)); /* Легкий градиентный фон */
+        border-radius: 10px; /* Скругленные углы */
+        backdrop-filter: blur(5px); /* Эффект размытия фона */
+        padding: 30px;
+        border-radius: 10px;
+        max-width: 600px;
+        margin: auto;
+    }
+
+        #hero .hero-content h1 {
+            text-transform: uppercase; /* Преобразование текста в верхний регистр */
+            font-size: 40px;
+            margin: 0;
+            font-family: 'Open Sans', sans-serif;
+            color: #fff;
+            font-weight: 700;
+        }
+
+        #hero .hero-content p {
+            font-size: 24px;
+            margin: 15px 0;
+            color: #dcdcdc;
+            font-weight: 500;
+        }
+
+
+
+    #hero .btn-primary {
+        background: linear-gradient(135deg, #ff5f6d, #ffc371);
+        color: #ffffff;
+        padding: 15px 30px;
+        text-decoration: none;
+        border-radius: 30px;
+        font-size: 18px;
+        transition: transform 0.3s ease;
+    }
+
+        #hero .btn-primary:hover {
+            background: linear-gradient(135deg, #ff4e50, #ffae58);
+        }
+
+.content-section {
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2 {
+    color: white;
+    text-align: center;
+    font-family: 'Roboto', sans-serif; /* Используем современный шрифт */
+    font-size: 2.5em; /* Размер шрифта */
+    font-weight: 700; /* Жирность шрифта */
+    text-transform: uppercase; /* Преобразование текста в верхний регистр */
+    letter-spacing: 0.1em; /* Расстояние между буквами для большей читаемости */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Теневой эффект для объёма */
+    margin: 20px 0; /* Отступы сверху и снизу */
+    padding: 10px; /* Внутренний отступ */
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.1)); /* Легкий градиентный фон */
+    border-radius: 10px; /* Скругленные углы */
+    backdrop-filter: blur(5px); /* Эффект размытия фона */
+}
+
+.services-list{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+
+li {
+    list-style-position: inside;
+}
+
+/*Окна с предложением*/
+.service-item {
+    flex: 1 1 30%;
+    margin: 15px;
+    background: linear-gradient(135deg, #ffc371, #ff5f6d);
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0,0,0,1);
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    color: #333;
+    transition: background 2s ease;
+}
+/*Изменения градиента окна при наведении*/
+    .service-item::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(135deg, #ff5f6d, #ffc371);
+        z-index: 0;
+        opacity: 0;
+        transition: opacity 2s ease;
+        border-radius: 10px; /* Сделаем закругления псевдоэлемента */
+    }
+
+    .service-item:hover::before {
+        opacity: 1;
+    }
+
+    .service-item > * {
+        position: relative;
+        z-index: 1;
+    }
+/*-*/
+
+footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+    footer p {
+        margin: 0;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+hr {
+    border: 0;
+    height: 2px; 
+    background-color: #000000; 
+    margin: 20px 0; 
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3); 
+}
+
+.container {
+    display: flex;
+    align-items: stretch;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    background: linear-gradient(135deg, #ff5f6d, #ffc371);
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.video-container {
+    flex: 1;
+    padding: 10px;
+}
+
+.text-container {
+    flex: 1;
+    padding: 10px;
+    padding-left: 25px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    justify-content: left;
+}
+
+.styled-video {
+    width: 100%;
+    height: auto;
+    border-image-source: linear-gradient(135deg, #f8f8f8 0%, #eaeaea 100%);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #000000;
+    outline: none;
+    overflow: hidden;
+}
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
+.contact-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 20px; /* Расстояние между элементами */
+}
+
+.contact-item {
+    background: #ff5f6d;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    flex: 1 1 300px; /* Минимальная ширина элемента */
+    max-width: 400px; /* Максимальная ширина элемента */
+    transition: transform 0.3s ease, background 0.5s ease;
+    color: #fff;
+}
+
+    .contact-item:hover {
+        transform: scale(1.05);
+        background: linear-gradient(135deg, #ffc371, #ff5f6d);
+    }
+
+    .contact-item h3 {
+        font-size: 22px;
+        margin-bottom: 10px;
+        color: #fff;
+    }
+
+    .contact-item p {
+        font-size: 18px;
+        color: #fff;
+        margin: 0;
+    }
+
+    .contact-item a {
+        color: #fff;
+        text-decoration: none;
+        border-bottom: 1px dashed #fff;
+    }
+
+        .contact-item a:hover {
+            color: #ffe59e;
+            border-bottom: 1px dashed #ffe59e;
+        }
+
+.more-info{
+    text-align: left;
+}
+
+    .more-info p {
+        font-family: 'Arial', sans-serif;
+        font-size: 20px;
+        text-align: center;
+        color: white;
+        background-color: #ff5f6d; /* Цвет фона кнопки */
+        padding: 20px 40px;
+        border-radius: 10px;
+    }
