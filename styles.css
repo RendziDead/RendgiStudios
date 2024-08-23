@@ -36,6 +36,12 @@ header {
             font-family: 'Open Sans', sans-serif;
         }
 
+@media (max-width: 700px) {
+    header nav .logo {
+        font-size: 1rem;
+    }
+}
+
         header nav ul {
             list-style: none;
             display: flex;
@@ -54,6 +60,12 @@ header {
                     padding: 5px 10px;
                     transition: background-color 0.3s ease;
                 }
+@media (max-width: 700px) {
+    header nav ul li a {
+        font-size: 14px;
+        padding: 5px 0px;
+    }
+}
 
                     header nav ul li a:hover {
                         background-color: #444;
@@ -64,7 +76,6 @@ a {
     text-decoration: none;
     color: #333;
 }
-
 
 
 #hero {
@@ -142,10 +153,10 @@ h2 {
     backdrop-filter: blur(5px); /* Ёффект размыти€ фона */
 }
 
-.services-list{
+.services-list {
     display: flex;
-    justify-content: space-around;
     position: relative;
+    flex-wrap: wrap;
 }
 
 li {
@@ -154,7 +165,7 @@ li {
 
 /*ќкна с предложением*/
 .service-item {
-    flex: 1 1 30%;
+    width: 330px;
     margin: 15px;
     background: linear-gradient(135deg, #ffc371, #ff5f6d);
     padding: 20px;
@@ -214,6 +225,7 @@ hr {
 }
 
 .container {
+    flex-wrap: wrap;
     display: flex;
     align-items: stretch;
     max-width: 1200px;
@@ -227,6 +239,7 @@ hr {
 .video-container {
     flex: 1;
     padding: 10px;
+    min-width:250px;
 }
 
 .text-container {
