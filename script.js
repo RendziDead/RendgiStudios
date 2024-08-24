@@ -8,7 +8,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // ќпредел€ем текущий €зык и устанавливаем соответствующее значение в select
     var currentUrl = window.location.href;
-    var currentLanguage = currentUrl.includes('index-pl.html') ? 'pl' : 'ru';
+    var currentLanguage = 'ru'; // ѕо умолчанию русский
+
+    if (currentUrl.includes('index-pl.html')) {
+        currentLanguage = 'pl';
+    } else if (currentUrl.includes('index-en.html')) {
+        currentLanguage = 'en';
+    } else if (currentUrl.includes('index-ua.html')) {
+        currentLanguage = 'ua';
+    }
 
     languageSwitcher.value = currentLanguage;
 
@@ -23,6 +31,13 @@ document.addEventListener('DOMContentLoaded', function () {
             } else if (selectedLanguage === 'pl') {
                 window.location.replace('index-pl.html');
             }
+            else if (selectedLanguage === 'en') {
+                window.location.replace('index-en.html');
+            }
+            else if (selectedLanguage === 'ua') {
+                window.location.replace('index-ua.html');
+            }
         }
     });
 });
+
