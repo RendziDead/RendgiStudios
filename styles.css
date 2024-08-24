@@ -21,9 +21,8 @@ body {
         width: 100%;
         height: 100%;
         background-image: url('cube5.gif');
-        background-size: cover;
-        background-repeat: no-repeat;
         z-index: -1;
+        will-change: transform;
     }
 
 header {
