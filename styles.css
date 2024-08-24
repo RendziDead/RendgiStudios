@@ -47,12 +47,6 @@ header {
             font-family: 'Open Sans', sans-serif;
         }
 
-@media (max-width: 700px) {
-    header nav .logo {
-        font-size: 1rem;
-    }
-}
-
         header nav ul {
             list-style: none;
             display: flex;
@@ -71,12 +65,6 @@ header {
                     padding: 5px 10px;
                     transition: background-color 0.3s ease;
                 }
-@media (max-width: 700px) {
-    header nav ul li a {
-        font-size: 14px;
-        padding: 5px 0px;
-    }
-}
 
                     header nav ul li a:hover {
                         background-color: #444;
@@ -93,12 +81,25 @@ header nav ul li select {
 }
 
 @media (max-width: 700px) {
-    header nav ul li select {
-        padding: 0px 5px;
-        transition: background-color 0.3s ease;
-        background-color: #222;
-        font-size: 12px;
+    header nav ul li a {
+        font-size: 13px;
+        padding: 5px 0px;
     }
+
+    header nav .logo {
+        font-size: 1rem;
+    }
+
+    header nav {
+        padding: 0 30px;
+    }
+
+        header nav ul li select {
+            padding: 0px 5px;
+            transition: background-color 0.3s ease;
+            background-color: #222;
+            font-size: 12px;
+        }
 }
 
 
