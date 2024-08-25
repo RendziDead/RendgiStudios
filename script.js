@@ -8,10 +8,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // ќпредел€ем текущий €зык и устанавливаем соответствующее значение в select
     var currentUrl = window.location.href;
-    var currentLanguage = 'ru'; // ѕо умолчанию русский
+    var currentLanguage = 'pl'; // ѕо умолчанию русский
 
-    if (currentUrl.includes('index-pl.html')) {
-        currentLanguage = 'pl';
+    if (currentUrl.includes('index-ru.html')) {
+        currentLanguage = 'ru';
     } else if (currentUrl.includes('index-en.html')) {
         currentLanguage = 'en';
     } else if (currentUrl.includes('index-ua.html')) {
@@ -27,9 +27,9 @@ document.addEventListener('DOMContentLoaded', function () {
         // ѕровер€ем, не пытаетс€ ли пользователь выбрать уже текущий €зык
         if (selectedLanguage !== currentLanguage) {
             if (selectedLanguage === 'ru') {
-                window.location.replace('index.html');  // »спользуем replace дл€ более быстрой обработки
+                window.location.replace('index-ru.html');  // »спользуем replace дл€ более быстрой обработки
             } else if (selectedLanguage === 'pl') {
-                window.location.replace('index-pl.html');
+                window.location.replace('index.html');
             }
             else if (selectedLanguage === 'en') {
                 window.location.replace('index-en.html');
